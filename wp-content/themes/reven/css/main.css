@@ -1,0 +1,349 @@
+.geoChart > ul li {
+  list-style: inside none disc;
+  margin-bottom: 10px;
+}
+.site-info {
+  text-align: center;
+  color: #686868;
+}
+.site-title {
+  margin: 0 auto;
+  max-width: 281px;
+  width: 100%;
+}
+.imageCenter {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+}
+.imageCenter .inner_container {
+  display: table;
+  margin: 0 auto;
+}
+.imageCenter .imageStyleLeft {
+  border: 1px solid #333;
+  float: left;
+  height: auto;
+  margin: 0 24px 20px 0;
+  max-width: 375px;
+  width: 100%;
+}
+.imageCenter .imageStyleUpperRh {
+  border: 1px solid #333;
+  float: right;
+  height: auto;
+  margin: 0 auto;
+  max-width: 155px;
+  width: 100%;
+}
+.imageCenter .imageStyleLowerRh {
+  border: 1px solid #333;
+  float: right;
+  height: auto;
+  margin: 15px auto;
+  max-width: 155px;
+  width: 100%;
+}
+.bike_cat {
+  display: table;
+  margin: 0 auto;
+  width: 88.5%;
+}
+.bike_cat .cat_container {
+  display: table;
+  margin: 0 auto;
+}
+.bike_cat .framebox {
+  background-color: #2e3336;
+  display: inline-block;
+  height: auto;
+  margin: 0 10px 20px;
+  position: relative;
+  max-width: 100%;
+}
+.bike_cat .framebox.cat {
+  margin: 0 10px 20px;
+}
+.bike_cat .framebox header {
+  left: 0;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.bike_cat .framebox .smallPrint {
+  display: block;
+  float: left;
+  font-weight: bold;
+  line-height: 19px;
+  padding: 5px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.bike_cat .framebox h3 {
+  color: #fff;
+  float: left;
+  font-style: italic;
+  margin: 0;
+  padding: 5px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.bike_cat .framebox a {
+  border: 1px solid #000000;
+  display: block;
+}
+.bike_cat .framebox a:hover {
+  border: 1px solid #4f565c;
+}
+.bike_cat h2 {
+  clear: both;
+  color: #fff;
+  font-size: 1.25em;
+  margin: 0 20px 20px;
+  text-align: left;
+}
+.bike_cat img {
+  width: 100%;
+}
+.category_types {
+  clear: both;
+  display: table;
+  height: auto;
+  margin: 0 auto 3rem;
+  overflow: auto;
+}
+.category_types li {
+  color: #fff;
+  display: inline-block;
+  float: left;
+  font-size: 1.5em;
+  margin: 0 5px;
+  text-align: center;
+}
+.category_types li a {
+  color: #fff;
+  display: inline-block;
+}
+.category_types li a:hover {
+  color: #cccccc;
+}
+.site_footer {
+  background-color: #333333;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+.local_lang {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.local_lang .lang-item {
+  float: left;
+  margin-left: 28px;
+}
+.local_lang .lang-item a {
+  color: #fff;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.geoChart {
+  margin: 0 auto 0;
+  width: 100%;
+}
+.geoChart h2 {
+  font-size: 18px;
+  font-size: 1.285714286 rem;
+  line-height: 1.6;
+  color: #fff;
+}
+.geoChart p {
+  color: #fff;
+  margin: 0 0 35px;
+}
+.geoChart .geoList {
+  color: #fcfcfc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+}
+.geoChart .geoList th {
+  font-weight: bold;
+}
+.geoChart .geoList th,
+.geoChart .geoList td {
+  font-size: 12px;
+  padding: 0 8px 18px;
+  text-align: center;
+}
+.contact_form {
+  margin-bottom: 30px;
+  overflow: auto;
+}
+.contact_form > li {
+  margin-bottom: 1.5%;
+}
+.contact_form textarea {
+  width: 80%;
+}
+.contact_form input[type=text] {
+  width: 50%;
+}
+#heroImage {
+  position: relative;
+}
+#heroImage .slideControl-left {
+  position: absolute;
+  top: 37%;
+  z-index: 9999;
+  height: 200px;
+  width: 24px;
+  left: -31px;
+}
+#heroImage .slideControl-left a {
+  display: block;
+  height: 100px;
+  text-decoration: none;
+  width: 24px;
+}
+#heroImage .slideControl-right {
+  position: absolute;
+  top: 37%;
+  right: -31px;
+  z-index: 9999;
+  height: 200px;
+  width: 24px;
+}
+#heroImage .slideControl-right a {
+  display: block;
+  height: 100px;
+  text-decoration: none;
+  width: 25px;
+}
+/*
+ these are just the default styles used in the Cycle2 demo pages.
+ you can use these styles or any others that you wish.
+ */
+/* set border-box so that percents can be used for width, padding, etc (personal preference) */
+.cycle-slideshow,
+.cycle-slideshow * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cycle-slideshow {
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img {
+  /*
+     some of these styles will be set by the plugin (by default) but setting them here
+     helps avoid flash-of-unstyled-content
+     */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+  position: static;
+  z-index: 100;
+}
+/* pager */
+.cycle-pager {
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  position: absolute;
+  top: 10px;
+  overflow: hidden;
+}
+.cycle-pager span {
+  font-family: arial;
+  font-size: 50px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  color: #ddd;
+  cursor: pointer;
+}
+.cycle-pager span.cycle-pager-active {
+  color: #D69746;
+}
+.cycle-pager > * {
+  cursor: pointer;
+}
+/* caption */
+.cycle-caption {
+  position: absolute;
+  color: white;
+  bottom: 30px;
+  right: 15px;
+  z-index: 700;
+}
+/* overlay */
+.cycle-overlay {
+  font-family: tahoma, arial;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 600;
+  background: black;
+  color: white;
+  padding: 15px;
+  opacity: .5;
+}
+/* prev / next links */
+.cycle-prev,
+.cycle-next {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 800;
+  height: 100%;
+  cursor: pointer;
+}
+.cycle-prev {
+  left: 0;
+  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;
+}
+.cycle-next {
+  right: 0;
+  background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;
+}
+.cycle-prev:hover,
+.cycle-next:hover {
+  opacity: .7;
+  filter: alpha(opacity=70);
+}
+.disabled {
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+  content: 'Paused';
+  color: white;
+  background: black;
+  padding: 10px;
+  z-index: 500;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+  opacity: .5;
+  filter: alpha(opacity=50);
+}

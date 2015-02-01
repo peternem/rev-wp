@@ -1,0 +1,1 @@
+<p class="clearfix credit">Site Design: IWISHIKNEWKUNGFU, Photo Credit: Motofishimages and Web Development: MATTPETERNELL.com</p>

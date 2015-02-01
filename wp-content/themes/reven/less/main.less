@@ -1,0 +1,206 @@
+@import "variables.less";
+@import "mixins.less";
+.geoChart > ul li {
+    list-style: inside none disc;
+    margin-bottom: 10px;
+}
+
+.site-info {
+    text-align: center;
+    color: #686868;
+}
+
+.site-title {
+    margin: 0 auto;
+    max-width: 281px;
+    width: 100%;
+}
+.imageCenter {
+	display: table;
+    margin: 0 auto;
+    width: 100%;
+    .inner_container {
+	    display: table;
+	    margin: 0 auto;
+	}
+    .imageStyleLeft {
+	    border: 1px solid #333;
+	    float: left;
+	    height: auto;
+	    margin: 0 24px 20px 0;
+	    max-width: 375px;
+    	width: 100%;
+	}
+	.imageStyleUpperRh {
+	    border: 1px solid #333;
+	    float: right;
+	    height: auto;
+	    margin: 0 auto;
+	   	max-width: 155px;
+    	width: 100%;
+	}	
+	.imageStyleLowerRh {
+	    border: 1px solid #333;
+	    float: right;
+	    height: auto;
+	    margin: 15px auto;
+	    max-width: 155px;
+    	width: 100%;
+	}  
+}
+
+.bike_cat {
+	display: table;
+    margin: 0 auto;
+    width: 88.5%;
+	.cat_container {
+	    display: table;
+	    margin: 0 auto;
+	}
+	.framebox {
+	    background-color: #2e3336;
+	    display: inline-block;
+	    height: auto;
+	    margin: 0 10px 20px;
+	    position: relative;
+	    max-width: 100%;
+	    &.cat {
+	    	margin: 0 10px 20px;
+	    }
+	    header {
+	    	left: 0;
+		    padding: 5px 10px;
+		    position: absolute;
+		    top: 0;
+		    z-index: 2;
+	    }
+	    .smallPrint {
+		    display: block;
+		    float: left;
+		    font-weight: bold;
+		    line-height: 19px;
+		    padding: 5px;
+		    text-shadow: 2px 2px 4px #000000;
+		}
+	    h3 {
+		    color: #fff;
+		    float: left;
+		    font-style: italic;
+		    margin: 0;
+		    padding: 5px;
+		    text-shadow: 2px 2px 4px #000000;
+
+		}
+	    a {
+		    border: 1px solid #000000;
+		    display: block;
+		    &:hover {
+			    border: 1px solid #4f565c;
+			}
+		}
+	}
+	h2 {
+	    clear: both;
+	    color: #fff;
+	    font-size: 1.25em;
+	    margin: 0 20px 20px;
+	    text-align: left;
+	}
+	img {
+    	width: 100%;
+    }
+}
+
+.category_types {
+    clear: both;
+    display: table;
+    height: auto;
+    margin: 0 auto 3rem;
+    overflow: auto;
+    li {
+        color: #fff;
+        display: inline-block;
+        float: left;
+        font-size: 1.5em;
+        margin: 0 5px;
+        text-align: center;
+        a  {
+            color: #fff;
+            display: inline-block;
+            &:hover {
+                color: #cccccc;
+            }
+        }
+    }
+}
+
+.site_footer {
+    background-color: #333333;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+.local_lang {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    .lang-item {
+	    float: left;
+	    margin-left: 28px;
+	    a {
+		    color: #fff;
+		    display: block;
+		    font-size: 11px;
+		    font-weight: bold;
+		    margin-bottom: 10px;
+		    text-decoration: none;
+		}
+	}
+}
+
+.geoChart {
+    margin: 0 auto 0;
+    width: 100%;
+    h2 {
+    	font-size: 18px;
+		font-size: 1.285714286 rem;
+		line-height: 1.6;
+		color:#fff;
+    }
+    p {
+    	color:#fff;
+    	margin: 0 0 35px;
+    }
+    .geoList {
+	    color: #fcfcfc;
+	    font-family: Arial,Helvetica,sans-serif;
+	    font-weight: bold;
+	    margin: 0 auto;
+	    width: 100%;
+	    th {
+		    font-weight: bold;
+		}
+		th, td {
+		    font-size: 12px;
+		    padding: 0 8px 18px;
+		    text-align: center;
+		}
+	}
+}
+
+
+.contact_form {
+	margin-bottom: 30px;
+	overflow: auto;
+	> li {
+    	margin-bottom: 1.5%;
+	}
+	textarea {
+	    width: 80%;
+	}
+	input[type=text] {
+	    width: 50%;
+	}
+}
+@import "cycle_slideshow.less";
