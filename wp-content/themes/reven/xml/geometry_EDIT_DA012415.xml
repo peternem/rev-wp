@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+   <?xml version="1.0" encoding="UTF-8" ?>
 <geometry>
-	<model name="FURY">
+<model name="FURY">
 		<frame_sizes>
 			<size>XS</size>
 			<seat_tube>410</seat_tube>
@@ -215,7 +215,7 @@
 			<st_angle>72</st_angle>
 			<bb_drop>59</bb_drop>
 		</frame_sizes>
-
+		
 	</model>
 	<model name="HAMMER 29">
 		<frame_sizes>
@@ -253,7 +253,7 @@
 		</frame_sizes>
 	</model>
 	<model name="HAMMER 27.5">
-		<frame_sizes>
+	    <frame_sizes>
 			<size>S</size>
 			<seat_tube>432</seat_tube>
 			<eff_top_tube>595</eff_top_tube>

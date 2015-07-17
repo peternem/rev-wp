@@ -1,6 +1,57 @@
-.geoChart > ul li {
-  list-style: inside none disc;
-  margin-bottom: 10px;
+.breadcrumb-container {
+  margin: 3% 0;
+}
+.breadcrumb {
+  background-color: #444;
+  list-style: outside none none;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li .active {
+  color: #777777;
+}
+.jumbotron {
+  left: 5%;
+  position: absolute;
+  top: 8%;
+  z-index: 9999;
+}
+.jumbotron .entry-title {
+  font-size: 36px;
+  text-shadow: 2px 2px 6px #666666;
+}
+.jumbotron > p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-top: 2%;
+  text-shadow: 2px 2px 6px #666666;
+}
+.home .home-page-content {
+  overflow: auto;
+}
+.home article {
+  float: left;
+  margin-right: 30px;
+  max-width: 725px;
+  width: 100%;
+}
+.home .img-container {
+  float: left;
+  max-width: 425px;
+  width: 35.33%;
+}
+.home .bike_cat {
+  display: table;
+  margin: 5% auto 0;
+  width: 88.5%;
+}
+.img-responsive,
+.cycle-slideshow img {
+  border: 1px solid #444;
 }
 .site-info {
   text-align: center;
@@ -43,6 +94,32 @@
   margin: 15px auto;
   max-width: 155px;
   width: 100%;
+}
+.imageCenter div {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 31%;
+}
+.imageCenter div:first-child {
+  margin-left: 0px;
+}
+.imageCenter div:last-child {
+  margin-right: 0px;
+}
+.imageCenter .image-right {
+  float: left;
+  height: auto;
+  max-width: 100%;
+}
+.imageCenter .image-middle {
+  float: left;
+  height: auto;
+  max-width: 100%;
+}
+.imageCenter .image-left {
+  float: left;
+  height: auto;
+  max-width: 100%;
 }
 .bike_cat {
   display: table;
@@ -192,6 +269,32 @@
 }
 .contact_form input[type=text] {
   width: 50%;
+}
+@media screen and (max-width: 960px) {
+  .imageCenter div {
+    width: 30.3%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imageCenter div {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 31%;
+  }
+  .home .img-container {
+    float: left;
+    max-width: 100%;
+    width: 99%;
+    margin-bottom: 9%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .imageCenter div {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 5%;
+    width: 100%;
+  }
 }
 #heroImage {
   position: relative;

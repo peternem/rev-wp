@@ -731,11 +731,11 @@ footer[role="contentinfo"] {
   font-size: 12px;
   font-size: 0.857142857 rem;
   line-height: 2;
-  max-width: 1040px;
-  max-width: 68.571428571 rem;
+  max-width: 1170px;
+  max-width: 83.571em rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 24px 0;
+  padding: 24px 40px;
   padding: 1.714285714 rem 0;
 }
 footer[role="contentinfo"] a {
@@ -1503,8 +1503,8 @@ img#wpstats {
   }
   .site {
     margin: 0 auto;
-    max-width: 960px;
-    max-width: 68.571428571 rem;
+    max-width: 1170px;
+    max-width: 83.571em rem;
     overflow: hidden;
   }
   .site-content {

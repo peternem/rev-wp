@@ -18,6 +18,9 @@ get_header(); ?>
 	<div id="heroImage">
 		<img src="<?php bloginfo('template_directory');?>/images/slideshow-home/reven_main_image_04.jpg" style="width: 100%;" alt="Reven on Guardsman Pass near Park City, Utah" class="mainImage"/>
 	</div>
+    <div class="breadcrumb-container">
+        <?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+    </div> 
 		<div id="primary" class="site-content">
 			<div id="content" role="main">
 	

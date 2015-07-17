@@ -16,7 +16,11 @@
 
 get_header(); ?>
 	<div id="heroImage">
-		<img src="<?php bloginfo('template_directory');?>/images/cross/crowbar/crowbar_illustration_940x425.jpg" style="width: 100%;" alt="Reven on Guardsman Pass near Park City, Utah" class="mainImage"/>
+	    <div class="jumbotron">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <p>Race-ready geometry. Race-ready performance. Race-ready paint. Crowbar.</p>
+    </div>
+		<img src="/wp-content/uploads/2015/06/reven_crowbar-1.jpg" style="width: 100%;" alt="Reven Crowbar" class="mainImage"/>
 	</div>
 
 <!-- 	<div class="imageCenter clearfix">
@@ -25,6 +29,9 @@ get_header(); ?>
 		<img src="<?php bloginfo('template_directory');?>/images/lifestyle/IMG_4234_TWEAKED_155x130.jpg"  alt="Ride Reven Bikes" class="imageStyleUpperRh"/>
 		<a href="#" class="ajaxImg"><img src="<?php bloginfo('template_directory');?>/images/road/frame-a/frame_a_detail_downtube_465x390.jpg" title="Reven Fury - Downtube Detail" alt="Reven Fury Downtube" class="imageStyleLowerRh hvr"/></a>
 		</div>  -->
+    <div class="breadcrumb-container">
+        <?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+    </div> 
 	<div id="primary" class="site-content full-bleed">
 		<div id="content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>

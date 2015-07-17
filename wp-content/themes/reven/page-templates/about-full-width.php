@@ -19,13 +19,21 @@ get_header(); ?>
 		<img src="<?php bloginfo('template_directory');?>/images/slideshow-home/reven_main_image_04.jpg" style="width: 100%;" alt="Reven on Guardsman Pass near Park City, Utah" class="mainImage"/>
 	</div>
 	<div id="mainContent">
-		<div class="imageCenter clearfix">
-			<img src="<?php bloginfo('template_directory');?>/images/lifestyle/IMG_4185_TWEAKED_485x356.jpg" alt="Ride Reven" class="imageStyleLeft"/>
-			<img src="<?php bloginfo('template_directory');?>/images/lifestyle/DSCN1003_485x386.jpg" alt="Reven Jack" class="imageStyleLeft"/>
-			<img src="<?php bloginfo('template_directory');?>/images/lifestyle/IMG_4234_TWEAKED_155x130.jpg" alt="Ride Reven Bikes" class="imageStyleUpperRh"/>
-			<img src="<?php bloginfo('template_directory');?>/images/lifestyle/DSCN0832_155x130.jpg" alt="" class="imageStyleLowerRh"/>
-		</div>
+        <div class="imageCenter clearfix">
+            <div class="image-left">
+              <img src="/wp-content/uploads/2015/06/reven_IMG_4185_365x365.jpg" alt="Ride Reven" class="img-responsive"/>
+            </div>
+            <div class="image-middle">
+              <img src="/wp-content/uploads/2015/06/DSCN1003_365x365.jpg" title="Ride Reven MTB's" alt="Ride Reven MTB" class="img-responsive"/>
+            </div>
+            <div class="image-right">
+                <img src="/wp-content/uploads/2015/06/mosesCoulee-PalisadesRd_365x365.jpg"  alt="Ride Reven Bikes" class="img-responsive"/>
+            </div>
+        </div> 
 	</div>
+    <div class="breadcrumb-container">
+        <?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+    </div> 
 	<div id="primary" class="site-content">
 
 		<div id="content" role="main">

@@ -16,6 +16,10 @@
 
 get_header(); ?>
 <div id="heroImage">
+    <div class="jumbotron">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <p>The Hammer is designed for sprinting up and down hills.</p>
+    </div>
 	<div class="slideControl-left">
 		<a href="#" id="prev" title="Previous">&nbsp;</a>
 	</div>
@@ -50,17 +54,20 @@ get_header(); ?>
 		<a href="#" id="next" title="Next">&nbsp;</a>
 	</div>
 </div>
-	<div class="imageCenter clearfix">
-		<img src="<?php bloginfo('template_directory');?>/images/lifestyle/DSCN1003_485x386.jpg" alt="Reven Rides Bends Big Fat Tour" class="imageStyleLeft"/>
-		<img src="<?php bloginfo('template_directory');?>/images/mtb/hammer/IMG_4289_485x386.jpg" title="Reven Hammer - Seat Tube and Downtube Detail" alt="The Reven Hammer" class="imageStyleLeft hvr" />
-		<img src="<?php bloginfo('template_directory');?>/images/lifestyle/DSC06619_155x130.jpg"  alt="Ride Reven Bikes" class="imageStyleUpperRh"/>
-		<img src="<?php bloginfo('template_directory');?>/images/mtb/hammer/IMG_4290_465x390.jpg" title="Reven Hammer - Head Tube Detail" alt="Hammer Head Tube" class="imageStyleLowerRh hvr"/>
-
-		<!-- <div class="caption">
-		<em>caption</em>
-		</div> -->
-	</div>
-	 
+    <div class="imageCenter clearfix">
+        <div class="image-left">
+          <img src="/wp-content/uploads/2015/06/DSCN1003_365x365.jpg" alt="Ride Reven" class="img-responsive"/>
+        </div>
+        <div class="image-middle">
+          <img src="/wp-content/uploads/2015/06/reven_IMG_4289_365x365.jpg" title="Reven Hammer Detail" alt="Reven Fury Seat Tube" class="img-responsive"/>
+        </div>
+        <div class="image-right">
+            <img src="/wp-content/uploads/2015/06/reven_IMG_4290_365x365.jpg"  alt="Reven Hammer Detail" class="img-responsive"/>
+        </div>
+    </div>
+    <div class="breadcrumb-container">
+        <?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+    </div> 
 	<div id="primary" class="site-content full-bleed">
 
 		<div id="content" role="main">

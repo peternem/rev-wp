@@ -19,6 +19,10 @@ get_header(); ?>
 	<div class="slideControl-left">
 		<a href="#" id="prev" title="Previous">&nbsp;</a>
 	</div>
+	<div class="jumbotron">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <p>Reven's flagship road racing machine.</p>
+    </div>
 	<div id='slideshow' class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true"  data-cycle-speed="1000"  data-cycle-timeout="6000" data-cycle-prev="#prev" data-cycle-next="#next">
 <?php 
                     //or insert the ID of your fields Group.
@@ -51,11 +55,19 @@ get_header(); ?>
 	</div>
 </div>
 	<div class="imageCenter clearfix">
-		<img src="<?php bloginfo('template_directory');?>/images/lifestyle/IMG_4185_TWEAKED_485x356.jpg" alt="Ride Reven" class="imageStyleLeft"/>
-		<a href="#" class="ajaxImg"><img src="<?php bloginfo('template_directory');?>/images/road/frame-a/frame_a_detail_rear_brake_485x356.jpg" title="Reven Fury - Seat tube and Rear Brake Detail" alt="Reven Fury Seat Tube" class="imageStyleLeft hvr" /></a>
-		<img src="<?php bloginfo('template_directory');?>/images/lifestyle/IMG_4234_TWEAKED_155x130.jpg"  alt="Ride Reven Bikes" class="imageStyleUpperRh"/>
-		<a href="#" class="ajaxImg"><img src="<?php bloginfo('template_directory');?>/images/road/frame-a/frame_a_detail_downtube_465x390.jpg" title="Reven Fury - Downtube Detail" alt="Reven Fury Downtube" class="imageStyleLowerRh hvr"/></a>
-	</div> 
+	    <div class="image-left">
+		  <img src="/wp-content/uploads/2015/06/reven_IMG_4185_365x365.jpg" alt="Ride Reven" class="img-responsive"/>
+		</div>
+		<div class="image-middle">
+		  <img src="/wp-content/uploads/2015/06/reven_fury_frame_brake_detail_365x365.jpg" title="Reven Fury - Seat tube and Rear Brake Detail" alt="Reven Fury Seat Tube" class="img-responsive"/>
+		</div>
+		<div class="image-right">
+		    <img src="/wp-content/uploads/2015/06/reven_DSC_3150_365x365.jpg"  alt="Ride Reven Bikes" class="img-responsive"/>
+		</div>
+	</div>
+    <div class="breadcrumb-container">
+        <?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+    </div>  
 	<div id="primary" class="site-content full-bleed">
 		<div id="content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>

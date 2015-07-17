@@ -16,6 +16,10 @@
 
 get_header(); ?>
 <div id="heroImage">
+    <div class="jumbotron">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <p>High performance frame, with a slightly more relaxed riding position.</p>
+    </div>
 	<div class="slideControl-left">
 		<a href="#" id="prev" title="Previous">&nbsp;</a>
 	</div>
@@ -51,14 +55,20 @@ get_header(); ?>
 	</div>
 </div>
 	<div class="imageCenter clearfix">
-		<div class="inner_container">
-			<img src="<?php bloginfo('template_directory');?>/images/lifestyle/IMG_3762_375x275.jpg" title="Reven" alt="Ride Reven" class="imageStyleLeft"/>
-			<img src="<?php bloginfo('template_directory');?>/images/road/rivet/IMG_4089_drivetrain_485x356.jpg" title="Reven Rivet - Drivetrain" alt="The Reven Rivet" class="imageStyleLeft hvr" />
-			<img src="<?php bloginfo('template_directory');?>/images/lifestyle/IMG_6665_155x130.jpg"  alt="Ride Reven Bikes" class="imageStyleUpperRh"/>
-			<img src="<?php bloginfo('template_directory');?>/images/road/rivet/IMG_4089_465x390.jpg" title="Reven Rivet - Head Tube Detail" alt="Reven Rivet Head Tube" class="imageStyleLowerRh hvr"/>
-		</div>
+		<div class="image-left">
+          <img src="/wp-content/uploads/2015/06/IMG_3762_365x365.jpg" alt="Ride Reven" class="img-responsive"/>
+        </div>
+        <div class="image-middle">
+          <img src="/wp-content/uploads/2015/06/rivet_frame_rivet_rear_365x365.jpg" title="Reven Fury - Seat tube and Rear Brake Detail" alt="Reven Fury Seat Tube" class="img-responsive"/>
+        </div>
+        <div class="image-right">
+            <img src="/wp-content/uploads/2015/06/rivet_frame_front_365x365.jpg"  alt="Reven Rivet Front Detail" class="img-responsive"/>
+        </div>
+		
 	</div>
-	 
+    <div class="breadcrumb-container">
+        <?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+    </div> 	 
 	<div id="primary" class="site-content full-bleed">
 
 		<div id="content" role="main">

@@ -19,6 +19,10 @@ get_header(); ?>
 	<div class="slideControl-left">
 		<a href="#" id="prev" title="Previous">&nbsp;</a>
 	</div>
+	<!-- <div class="jumbotron">
+        <h1 class="entry-title"><?php the_title(); ?></h1>
+        <p>High performance frame, with a slightly more relaxed riding position.</p>
+    </div> -->
 	<div id='slideshow' class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true"  data-cycle-speed="1000"  data-cycle-timeout="6000" data-cycle-prev="#prev" data-cycle-next="#next">
 <?php 
                     //or insert the ID of your fields Group.
@@ -51,12 +55,19 @@ get_header(); ?>
 	</div>
 </div>
 	<div class="imageCenter clearfix">
-		<img src="<?php bloginfo('template_directory');?>/images/lifestyle/DSCN1006_485x386.jpg" alt="Reven Rides Bends Big Fat Tour" class="imageStyleLeft"/>
-		<img src="<?php bloginfo('template_directory');?>/images/mtb/jack/IMG_4277_headtube_485x386.jpg" title="Reven Jack - Top Tube, Head Tube and Down Tube Detail" alt="The Reven Jack" class="imageStyleLeft hvr" />
-		<img src="<?php bloginfo('template_directory');?>/images/lifestyle/DSCN0998_155x130.jpg"  alt="Ride Reven Bikes" class="imageStyleUpperRh"/>
-		<img src="<?php bloginfo('template_directory');?>/images/mtb/jack/IMG_4268_seattube_465x390.jpg" title="Reven Jack - Seat Tube Detail" alt="Jack Seat Tube" class="imageStyleLowerRh hvr"/>
-	</div>
-	 
+        <div class="image-left">
+          <img src="/wp-content/uploads/2015/06/DSCN1006_365x3656.jpg" alt="Ride Reven" class="img-responsive"/>
+        </div>
+        <div class="image-middle">
+          <img src="/wp-content/uploads/2015/06/IMG_4268_seattube_365x365.jpg" title="Reven Jack - Seat tube and Rear Brake Detail" alt="Reven Fury Seat Tube" class="img-responsive"/>
+        </div>
+        <div class="image-right">
+            <img src="/wp-content/uploads/2015/06/IMG_4277_headtube_365x365.jpg"  alt="Reven Rivet Front Detail" class="img-responsive"/>
+        </div>
+    </div>
+    <div class="breadcrumb-container">
+        <?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+    </div> 
 	<div id="primary" class="site-content full-bleed">
 
 		<div id="content" role="main">

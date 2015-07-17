@@ -32,7 +32,9 @@ get_header();
 		<a href="#" id="next" title="Next">&nbsp;</a>
 	</div>
 </div>
-
+    <div class="breadcrumb-container">
+        <?php if(function_exists('upbootwp_breadcrumbs')) upbootwp_breadcrumbs(); ?>
+    </div> 
 <div id="primary" class="site-content full-bleed">
 
 	<div id="content" role="main">

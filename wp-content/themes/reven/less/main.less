@@ -1,10 +1,67 @@
 @import "variables.less";
 @import "mixins.less";
-.geoChart > ul li {
-    list-style: inside none disc;
-    margin-bottom: 10px;
+
+.breadcrumb-container {
+	margin: 3% 0;
+}
+.breadcrumb {
+    background-color: #444;
+    list-style: outside none none;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    > li {
+	    display: inline-block;
+	    .active {
+		    color: #777777;
+		}
+	}
 }
 
+
+.jumbotron {
+    left: 5%;
+    position: absolute;
+    top: 8%;
+    z-index: 9999;
+    .entry-title {
+	    font-size: 36px;
+	    text-shadow: 2px 2px 6px rgba(102,102,102, 1);
+	}
+	> p {
+	    font-size: 16px;
+	    font-weight: bold;
+	    line-height: 1.6;
+	    margin-top: 2%;
+	    text-shadow: 2px 2px 6px rgba(102,102,102, 1);
+	}
+}
+
+.home {
+	
+	.home-page-content {
+	    overflow: auto;
+	}
+	article {
+	    float: left;
+	    margin-right: 30px;
+	    max-width: 725px;
+		width: 100%;
+	}	
+	.img-container {
+	    float: left;
+	    max-width: 425px;
+	    width: 35.33%;
+	}
+	.bike_cat {
+	    display: table;
+	    margin: 5% auto 0;
+	    width: 88.5%;
+	}
+}
+
+.img-responsive, .cycle-slideshow img {
+    border: 1px solid #444;
+}
 .site-info {
     text-align: center;
     color: #686868;
@@ -15,6 +72,7 @@
     max-width: 281px;
     width: 100%;
 }
+
 .imageCenter {
 	display: table;
     margin: 0 auto;
@@ -48,6 +106,38 @@
     	width: 100%;
 	}  
 }
+
+.imageCenter {
+	div {
+	    margin-left: 20px;
+	    margin-right: 20px;
+	    width: 31%;
+		&:first-child {
+			margin-left: 0px;
+		}
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+	.image-right {
+	    float: left;
+	    height: auto;
+	    max-width: 100%;
+	    
+	}
+	
+	.image-middle {
+	    float: left;
+	    height: auto;
+	    max-width: 100%;
+	}
+	.image-left {
+	    float: left;
+	    height: auto;
+	    max-width: 100%;
+	}	
+}
+
 
 .bike_cat {
 	display: table;
@@ -203,4 +293,36 @@
 	    width: 50%;
 	}
 }
+
+@media screen and (max-width: 960px) {
+	.imageCenter div {
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.imageCenter div {
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 31%;
+	}
+	.home .img-container {
+		float: left;
+		max-width: 100%;
+		width: 99%;
+		margin-bottom: 9%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.imageCenter div {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 5%;
+		width: 100%;
+	}
+}
+
+
+
 @import "cycle_slideshow.less";
